@@ -5,7 +5,7 @@ class Animal {
 }
 
 class Dog extends Animal {
-    public void speak() {
+    public final void speak() {  // subtle change here
         System.out.println("Dog barks");
     }
 
@@ -18,7 +18,6 @@ public class Main {
     public static void main(String[] args) {
         Animal a = new Dog();
         a.speak();
-        // a.fetch(); // What happens if this line is uncommented?
+        // a.fetch(); // Compile-time error: fetch() is not in Animal
     }
 }
-
