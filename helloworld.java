@@ -19,5 +19,6 @@ public class Main {
         Animal a = new Dog();
         a.speak();
         // a.fetch(); // Compile-time error: fetch() is not in Animal
+        System.out.println("New Build");
     }
 }
